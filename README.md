@@ -8,4 +8,4 @@ Most of the class content is based on the materials in the .html file (and its s
 
 This repository also contains a slide deck (*Intro_to_Data_Vis_in_R_slides*) with visuals that we will use to explore the dos and don'ts of data visualisation.
 
-Other files in the repository (such as .pdf and .png images) are either generated automatically when you run the .Rmd file on your own machine. 
+Other files in the repository (such as .pdf and .png images) are generated automatically when you run the .Rmd file on your own machine. 
