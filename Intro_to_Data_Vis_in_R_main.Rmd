@@ -39,7 +39,7 @@ head(mtcars)
 
 A histogram is a type of plot used to visualise the distribution of a single *continuous* variable. It helps reveal the overall shape of the data (for example, whether it is normally distributed or skewed) and can also make it easier to spot potential outliers.
 
-For instance, let's explore how the variable mpg, which represents miles per gallon for each car in the dataset, is distributed:
+For instance, let's explore how the variable `mpg`, which represents miles per gallon for each car in the dataset, is distributed:
 
 ```{r}
 hist(mtcars$mpg,
@@ -118,7 +118,7 @@ arrows(x0 = bp, y0 = avg_mpg - 2*se_mpg,
        angle = 90, code = 3, length = 0.1, col = "black")
 ```
 
-### Stacked & proportional bar plots
+### Stacked / proportional bar plots
 
 If you are comparing parts of a whole across different categories, it can be useful to use a stacked or proportional bar plot. *Stacked* bar plots show how subgroups contribute to totals, while *proportional* stacked bar plots standardise those totals so you can compare relative proportions even when overall group sizes differ.
 
@@ -955,7 +955,7 @@ ggplot(pressure, aes(x = temperature, y = pressure)) +
 
 ## Box plots with 2 variables
 
-We've looked at how to create box plots and we've also looked at how to represent variables with colour. Let's combine these strands of knowledge to create a box plot for `mpg` by number of cylinders:
+We've looked at how to create box plots and we've also looked at how to represent variables with colour. Let's combine these strands of knowledge to create a box plot for `mpg` by number of cylinders (bute note that here again the use of colour does not convey any additional information and is therefore unnecessary):
 
 ```{r}
 ggplot(mtcars, aes(x = factor(cyl), y = mpg, fill = factor(cyl))) +
